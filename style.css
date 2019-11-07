@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+/*Start of Nav Bar*/
+
+#logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 0px 1px 10px grey;
+    z-index: 5;
+    position: relative;
+}
+
+
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgb(105, 5, 0);
+}
+
+.menu{
+	display: none;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(187, 9, 0,1);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+button:hover{
+    background-color: rgba(187, 9, 0,0.8);
+}
+/*Mobile Nav*/
+
+.overlay{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 6;
+	left: 0;
+	top: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+.overlay_content{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay a {
+	padding: 15px;
+	font-size: 36px;
+	display: block;
+	transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover, .overlay a:focus{
+	color: rgba(187, 9, 0,1);
+}
+
+.overlay .close{
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+/*End Mobile Nav*/
+
+
+
+/*End of Nav Bar*/
+
+
+/*Mathematics Definition*/
+#mathDefinition{
+    font-family: 'Cultive Mono', monospace;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+    letter-spacing: 0.2em;
+    border: 2px red solid;
+    padding: 10px 10px;
+  
+}
+
+#mathDefinition h1{
+    text-align: center;
+    font-size: 50px
+}
+
+#mathDefinition h3{
+    text-align: center;
+    font-size: 15px
+    color:lightgray;
+    padding: 10px;
+}
+
+#mathDefinition p{
+    line-height: 2em;
+    font-size: 25px;
+}
+
+/*End Mathematics Definition*/
+
+
+/*Start Why We learn Math?*/
+.text{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    padding: 10px;
+    box-shadow:3px 3px 5px 5px gray; 
+    margin-bottom: 30px;
+    
+}
+
+.text h1{
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 55px;
+}
+
+.text p{
+    font-size: 30px;
+    text-align: justify;
+    line-height: 1.7em;
+   
+}
+
+.text img{
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+}
+
+/* End Why we learn math?*/
+
+/*Courses Grid*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto,60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+    
+}
+
+.text__medium{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.cards{
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns:repeat(12, minmax(auto,60px));
+    grid-gap: 40px;
+}
+
+.card{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+	border: 1px black solid;
+	box-shadow: 5px 5px gray;
+    
+}
+
+#course_name{
+	text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.card_image-container{
+    width: 100%;
+    padding-top:56.25%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card_image-container img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_content {
+    padding: 20px;
+}
+
+.card_title{
+    margin-bottom: 20px;
+}
+
+.card_info{
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.card_price{
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: rgba(187, 9, 0,1);
+    border-radius: 20px;  
+	transition: all 0.3s ease 0s;
+	color: white;
+}
+
+.card_price:hover{
+	background-color: rgba(187, 9, 0,0.8);
+}
+
+/*End Courses Grid*/
+
+/*Footer*/
+
+#footer{
+    font: 0.8em "arial";
+    text-align: center;
+    padding: 30px;
+    box-shadow: -5px -5px 6px gray;
+    color: gray;
+    
+/*End Footer*/
+}
+
+/*Media Query*/
+@media only screen and (max-width: 1000px){
+    .card{
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    main{
+        grid-gap: 20px;
+    }
+    
+    .card{
+        grid-column-end:span 12;
+    }
+	.nav_links, .cta{
+		display: none;
+	}
+	.menu{
+		display: inherit;
+	}
+	
+}
+
+@media only screen and (max-width: 500px){
+    main{
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards{
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 2fr);
+        grid-gap: 20px;
+    }
+    .card{
+        grid-column-end: span 6;
+    }
+}
+
+@media screen and (max-height: 450px) {
+	.overlay{
+		font-size: 20px;
+	}
+	
+	.overlay{
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+/* End Media Query*/

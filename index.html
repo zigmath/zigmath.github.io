@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Home | Sigmath</title>
+</head>
+
+<body>
+    
+    <!--Nav Bar   -->
+    <header>
+        <img src="logo.png" alt="logo" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">Definitions</a></li>
+            </ul>
+
+        </nav>
+        <a class="cta" href="#"><button>About</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+	</header>
+	<div id="mobile_menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay_content">
+			<a href="index.html">Home</a>
+			<a href="courses.html">Courses</a>
+			<a href="#">Definitions</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="mobile.js"></script>
+    </header>
+    <!--End Nav Bar-->
+   
+       
+    <div id="mathDefinition">
+        <h1>Mathematics:</h1>
+        <h3>&#91;math-uh-mat-iks&#93; Noun</h3>
+        <p>The science of numbers and their operations, interrelations, combinations, generalizations, and abstractions and of space configurations and their structure, measurement, transformations, and generalizations</p>
+    </div>
+
+    <div class="text">
+        <h1>Why We Learn Math?</h1>
+        <img src="world.jpg"><p>Math is thaught on every school curriculum and is required to graduate from every high school, but why? Well, math is a universal subject, meaning that it can be found in almost every subject and field of study you can think of. Want to become a nurse? Then you need to calculate the dosage you need to give to each patient using formulas. Want to become a musician? Math is patterns, and music is just patterns of notes that sound well together. Want to become a basketball player? For each shot you need to take into account the angle you throw the ball at, the distance between you and the hoop, and the speed at which you throw the ball. Although math is the subject most students strugle with, math has a big impact in how the world works, and we need to learn how to harness it's power. </p>
+        
+    </div>
+    
+    <!--Footer-->
+    <footer>
+        <div id="footer">
+            <h3>&copy; 2019. All Rights Reserved.</h3>
+        </div>
+    </footer>    
+    <!--End Footer-->
+</body>
+
+</html>

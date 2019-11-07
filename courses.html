@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<title>Courses | Sigmath</title>
+</head>
+
+<body>
+
+
+	<!--Nav Bar   -->
+	<header>
+		<img src="logo.png" alt="logo" id="logo">
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="#">Definitions</a></li>
+			</ul>
+
+		</nav>
+		<a class="cta" href="#"><button>About</button></a>
+		<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+	</header>
+	<div id="mobile_menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay_content">
+			<a href="index.html">Home</a>
+			<a href="courses.html">Courses</a>
+			<a href="#">Definitions</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="mobile.js"></script>
+
+	<!--End Nav Bar-->
+
+
+
+	<!--Course Cards-->
+	<main>
+		<section class="cards">
+			<div class="card">
+				<div class="card_image-container">
+					<img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80">
+				</div>
+				<div class="card_content">
+					<p id="course_name" class="card_title text--medium">Course Title</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<a class="card_price text--medium" href="#">Go To</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card_image-container">
+					<img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80">
+				</div>
+				<div class="card_content">
+					<p id="course_name" class="card_title text--medium">Course Title</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<a class="card_price text--medium" href="#">Go To</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card_image-container">
+					<img src="https://images.unsplash.com/photo-1503789101408-444b37749472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80">
+				</div>
+				<div class="card_content">
+					<p id="course_name" class="card_title text--medium">Course Title</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<a class="card_price text--medium" href="#">Go To</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!--End Course Cards-->
+
+	<!--Footer-->
+	<footer>
+		<div id="footer">
+			<h3>&copy; 2019. All Rights Reserved.</h3>
+		</div>
+	</footer>
+	<!--End Footer-->
+
+</body>
+
+</html>
