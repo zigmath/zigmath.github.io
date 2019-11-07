@@ -328,6 +328,16 @@ main{
     .card{
         grid-column-end: span 6;
     }
+	.overlay{
+		font-size: 20px;
+	}
+	
+	.overlay .close{
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+	
 }
 
 @media screen and (max-height: 450px) {
@@ -335,7 +345,7 @@ main{
 		font-size: 20px;
 	}
 	
-	.overlay{
+	.overlay .close{
 		font-size: 40px;
 		top: 15px;
 		right: 35px;
