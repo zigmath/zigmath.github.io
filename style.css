@@ -322,7 +322,7 @@ main{
     }
     .cards{
         grid-column: 2 / span 6;
-        grid-template-columns: repeat(6, 2fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-gap: 20px;
     }
     .card{
